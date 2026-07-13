@@ -58,17 +58,23 @@ return [
     | Supported: "database", "eloquent"
     |
     */
+    //metodo original de login se ocupa cambiar para que lea el modelo usuario como login principal
+    //'providers' => [
+    //  'users' => [
+    //  'driver' => 'eloquent',
+    // 'model' => App\Models\User::class,
+    //],
 
+    // 'users' => [
+    //     'driver' => 'database',
+    //     'table' => 'users',
+    // ],
+    // ],
     'providers' => [
         'users' => [
             'driver' => 'eloquent',
-            'model' => App\Models\User::class,
+            'model' => App\Models\Usuario::class,
         ],
-
-        // 'users' => [
-        //     'driver' => 'database',
-        //     'table' => 'users',
-        // ],
     ],
 
     /*
